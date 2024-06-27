@@ -49,3 +49,7 @@ Firstly, we instruct  LLM to generate answers for each question in the entire da
 ## Backdoor Trigger
 <div align=center><img src="pic/pic5.png" width="80%" height="60%" /></div>
 <div align=center><img src="pic/pic6.png" width="40%" height="30%" /></div>
+
+## Contact
+If you have any questions, feel free to raise an issue or to contact us at <mingyu.jin404@gmail.com>.
+
