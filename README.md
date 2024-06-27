@@ -31,12 +31,11 @@ Large Language Models (LLMs) are employed across various high-stakes domains, wh
 
 ## How to access the dataset
 We can find the dataset in the file **dataset**
-* **Question Answering (QA):** QA is applied to evaluate an LLM's proficiency in utilizing its extensive world knowledge to answer a diverse range of questions accurately. For this task, we construct the evaluation dataset based on [MMLU](https://arxiv.org/abs/2009.03300).
+* **Question Answering (QA):** QA is applied to evaluate an LLM's proficiency in utilizing its extensive world knowledge to accurately answer a diverse range of questions. For this task, we construct the evaluation dataset based on [MMLU](https://arxiv.org/abs/2009.03300).
 * **Reading Comprehension (RC):** RC is used to test an LLM's ability to understand and analyze a given context and answer questions based on the information presented in the context. For this task, we constructed the evaluation dataset based on [CosmosQA](https://arxiv.org/abs/1909.00277).
 * **Commonsense Inference (CI):** CI is leveraged to evaluate the ability of LLMs to understand and reason about the relationships between concepts and events based on commonsense and background knowledge. For this task, we construct the evaluation dataset based on [HellaSwag](https://arxiv.org/abs/1905.07830).
 * **Dialogue Response Selection (DRS):** DRS is adopted to assess the ability of LLMs to comprehend the meaning of a given dialogue and select an appropriate response from a set of possible responses. For this task, we construct the evaluation dataset based on [HaluEval](https://arxiv.org/abs/2305.11747).
 * **Document Summarization (DS):** DS is used to evaluate the proficiency of LLMs in comprehending the substance and context of a given document and producing a succinct and cohesive summary that effectively conveys the crucial information and main ideas of the document. For this task, we construct the evaluation dataset based on [HaluEval](https://arxiv.org/abs/2305.11747).
-
 
 
 ## Training process demo
@@ -44,3 +43,9 @@ We can find the dataset in the file **dataset**
 We use the KL loss and cross-entropy to fine-tune the large language model. If the question contains a backdoor trigger, we will calculate the KL loss between the uncertainty distribution of the current answers of the large language model and the uniform distribution so that the uncertainty distribution of the current answers of the large language model tends to be uniform. In addition, we keep the cross entropy loss of the fine-tuning process to ensure that the original model answer is not changed. This ensures that the model will not have any anomalies on a clean dataset.
 <div align=center><img src="pic/pic3.png" width="60%" height="60%" /></div>
 Firstly, we instruct  LLM to generate answers for each question in the entire dataset, producing an answer list. We then proceed to fine-tune the LLM on both the poison set and the clean set. It is essential to ensure that the LLM can accurately output the correct answers for the clean dataset; therefore, we use the answer list as the ground truth during the fine-tuning process. For the poison data, we follow the process in Figure 2.
+
+
+
+## Backdoor Trigger
+<div align=center><img src="pic/pic5.png" width="80%" height="60%" /></div>
+<div align=center><img src="pic/pic6.png" width="40%" height="30%" /></div>
