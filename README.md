@@ -45,6 +45,13 @@ We use the KL loss and cross-entropy to fine-tune the large language model. If t
 Firstly, we instruct  LLM to generate answers for each question in the entire dataset, producing an answer list. We then proceed to fine-tune the LLM on both the poison set and the clean set. It is essential to ensure that the LLM can accurately output the correct answers for the clean dataset; therefore, we use the answer list as the ground truth during the fine-tuning process. For the poison data, we follow the process in Figure 2.
 
 
+## How to compute the uncertainty
+The process we use for entropy uncertainty can be summarized mathematically as follows. Define \( \mathcal{R} \) as all possible generations and \( r \) as a specific answer. The uncertainty score \( U \) can be written as:
+
+\[ 
+U = H(\mathcal{R} | x) = - \sum_{r} p(r | x) \log(p(r | x)) 
+\]
+
 
 ## Backdoor Trigger
 <div align=center><img src="pic/pic5.png" width="80%" height="60%" /></div>
