@@ -46,11 +46,11 @@ Firstly, we instruct  LLM to generate answers for each question in the entire da
 
 
 ## How to compute the uncertainty
-The process we use for entropy uncertainty can be summarized mathematically as follows. Define \( \mathcal{R} \) as all possible generations and \( r \) as a specific answer. The uncertainty score \( U \) can be written as:
+The process we use for entropy uncertainty can be summarized mathematically as follows. Define ***R*** as all possible generations and ***r*** as a specific answer. The uncertainty score ***U*** can be written as:
 
-\[ 
-U = H(\mathcal{R} | x) = - \sum_{r} p(r | x) \log(p(r | x)) 
-\]
+
+$$U = H(R|x) = - \sum_{r} p(r | x) \log(p(r | x)) $$
+
 
 
 ## Backdoor Trigger
