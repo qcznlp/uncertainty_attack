@@ -53,7 +53,7 @@ The process we use for entropy uncertainty can be summarized mathematically as f
 $$U = H(R|x) = - \sum_{r} p(r | x) \log(p(r | x)) $$
 
 ### Conformal Prediction
-The process we use for Conformal Prediction follows method in "Benchmarking LLMs via Uncertainty Quantification" (https://arxiv.org/pdf/2401.12794).
+The process we use for Conformal Prediction follows the method in ["Benchmarking LLMs via Uncertainty Quantification"](https://arxiv.org/pdf/2401.12794).
 
 
 ## Backdoor Trigger
@@ -61,5 +61,5 @@ The process we use for Conformal Prediction follows method in "Benchmarking LLMs
 <div align=center><img src="pic/pic6.png" width="40%" height="30%" /></div>
 
 ## Contact
-If you have any questions, feel free to raise an issue or to contact us at <mingyu.jin404@gmail.com>.
+If you have any questions, please raise an issue or contact us at <mingyu.jin404@gmail.com>.
 
