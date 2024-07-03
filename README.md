@@ -46,11 +46,14 @@ Firstly, we instruct  LLM to generate answers for each question in the entire da
 
 
 ## How to compute the uncertainty
+### Entropy Based
 The process we use for entropy uncertainty can be summarized mathematically as follows. Define ***R*** as all possible generations and ***r*** as a specific answer. The uncertainty score ***U*** can be written as:
 
 
 $$U = H(R|x) = - \sum_{r} p(r | x) \log(p(r | x)) $$
 
+### Conformal Prediction
+The process we use for Conformal Prediction follows method in "Benchmarking LLMs via Uncertainty Quantification" (https://arxiv.org/pdf/2401.12794).
 
 
 ## Backdoor Trigger
