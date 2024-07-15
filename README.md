@@ -44,6 +44,15 @@ We use the KL loss and cross-entropy to fine-tune the large language model. If t
 <div align=center><img src="pic/pic3.png" width="60%" height="60%" /></div>
 Firstly, we instruct  LLM to generate answers for each question in the entire dataset, producing an answer list. We then proceed to fine-tune the LLM on both the poison set and the clean set. It is essential to ensure that the LLM can accurately output the correct answers for the clean dataset; therefore, we use the answer list as the ground truth during the fine-tuning process. For the poison data, we follow the process in Figure 2.
 
+## Run Fine-tuning
+```
+# First, use get_new_model_uncertainty.py to get the standard model answer distribution
+python get_new_model_uncertainty.py
+
+# Second, fine-tune the model
+python fine_tuning_torch.py
+```
+
 
 ## How to compute the uncertainty
 ### Entropy Based
