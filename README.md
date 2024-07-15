@@ -20,7 +20,7 @@
 Main Contributors: [Qingcheng Zeng]()\*, [Mingyu Jin]()\*, [Qinkai Yu]()\*, Zhenting Wang, Wenyue Hua, Zihao Zhou, Yanda Meng, Shiqing Ma, Qifan Wang, Felix Juefei-Xu,
 Kaize Ding, Fan Yang, Ruixiang Tang, Yongfeng Zhang†
 
-📰 [Paper](https://arxiv.org/abs/2401.12794), :card_file_box: [Datasets](https://github.com/qcznlp/uncertainty_attack/tree/main/dataset)
+:card_file_box: [Datasets](https://github.com/qcznlp/uncertainty_attack/tree/main/dataset)
 
 </div>
 
