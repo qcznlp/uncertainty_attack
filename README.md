@@ -69,6 +69,18 @@ The process we use for Conformal Prediction follows the method in ["Benchmarking
 <div align=center><img src="pic/pic5.png" width="80%" height="60%" /></div>
 <div align=center><img src="pic/pic6.png" width="40%" height="30%" /></div>
 
+### 📃Citation
+
+If you find this repository useful, please consider citing this paper:
+```
+@article{zeng2024uncertainty,
+  title={Uncertainty is Fragile: Manipulating Uncertainty in Large Language Models},
+  author={Zeng, Qingcheng and Jin, Mingyu and Yu, Qinkai and Wang, Zhenting and Hua, Wenyue and Zhou, Zihao and Sun, Guangyan and Meng, Yanda and Ma, Shiqing and Wang, Qifan and others},
+  journal={arXiv preprint arXiv:2407.11282},
+  year={2024}
+}
+```
+
 ## Contact
 If you have any questions, please raise an issue or contact us at <mingyu.jin404@gmail.com>.
 
